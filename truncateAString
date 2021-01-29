@@ -1,0 +1,16 @@
+function truncateString(str, num) {
+  let truncated = ""
+  let newStr = ""
+  
+  if(num < str.length){
+    for(let i = 0; i < num; i++){
+    truncated += str[i] 
+    newStr = truncated.concat('...')
+  } return newStr
+    } else{
+      return str
+    }
+
+  }
+
+truncateString("A-tisket a-tasket A green and yellow basket", 8);
